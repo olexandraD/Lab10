@@ -1,0 +1,80 @@
+#temperature {
+    background-color: rgb(245, 225, 183);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 60%;
+}
+
+.task-condition {
+    color: #b94a48;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    background: linear-gradient(45deg, rgba(250, 119, 141, 0.7), rgba(252, 248, 117, 0.7));
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.frame {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #4d1f17;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #4d1f17;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 16px;
+    padding: 5px;
+    background: #fff8dc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background: linear-gradient(45deg, #f4a261, #e76f51);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #f4a261, #d05c41);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

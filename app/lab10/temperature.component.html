@@ -1,0 +1,24 @@
+<div id="temperature">
+  <div class="task-condition">
+    <p>10. Дані про температуру повітря за декаду листопада зберігаються в масиві. Визначити, скільки разів температура опускалася нижче -10 градусів.</p>
+  </div>
+  <div class="frame">
+    <h1>Температури за листопад</h1>
+    
+    <input 
+      type="number" 
+      [(ngModel)]="newTemperature" 
+      placeholder="Введіть температуру" 
+    />
+    <button (click)="addTemperature()">Додати температуру</button>
+    
+    <p><strong>Введені температури:</strong></p>
+    <ul>
+      <li *ngFor="let temp of temperatures">{{ temp }}°C</li>
+    </ul>
+
+    <p *ngIf="temperatures.length > 0">
+      Кількість днів з температурою нижче -10°C: {{ belowMinus10 }}
+    </p>
+  </div>
+</div>

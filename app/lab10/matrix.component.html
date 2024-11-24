@@ -1,0 +1,35 @@
+<div id="matrix">
+    <div class="task-condition">
+      <p>10. Дано цілочисельний масив В [1..5, 1..5]. Знайти найменший елемент масиву і повідомити його розташування щодо правої діагоналі.</p>
+    </div>
+    <div class="frame">
+      <h1>Масив 5x5</h1>
+      <table>
+        <tr *ngFor="let row of matrix; let rowIndex = index">
+          <td 
+            *ngFor="let item of row; let colIndex = index" 
+            [ngClass]="{ 
+              'highlight': isMinValue(rowIndex, colIndex), 
+              'diagonal': rowIndex + colIndex === matrix.length - 1
+            }">
+            {{ item }}
+          </td>
+        </tr>
+      </table>
+  
+      <div class="button-container">
+        <button (click)="findMinValue()">Знайти мінімальний елемент</button>
+      </div>
+  
+      <div *ngIf="calculationDone">
+        <p *ngIf="minValue !== Infinity">
+          Найменший елемент: {{ minValue }} на позиції 
+          (рядок: {{ minPosition.row + 1 }}, стовпець: {{ minPosition.col + 1 }})
+        </p>
+        <p *ngIf="minValue !== Infinity">
+          Розташування щодо правої діагоналі: {{ checkPosition() }}
+        </p>
+      </div>
+    </div>
+  </div>
+  

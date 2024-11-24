@@ -1,0 +1,19 @@
+<app-header></app-header>
+
+<div class="menu">
+  <button (click)="showPage = 'phonecalc'">Лабораторна №9</button>
+  <button (click)="showPage = 'temperature'">Одновимірний масив</button>
+  <button (click)="showPage = 'matrix'">Двовимірний масив</button>
+</div>
+
+<div *ngIf="showPage === 'phonecalc'">
+  <app-phonecalc></app-phonecalc>
+</div>
+
+<div *ngIf="showPage === 'temperature'">
+  <app-temperature></app-temperature>
+</div>
+
+<div *ngIf="showPage === 'matrix'">
+  <app-matrix></app-matrix>
+</div>

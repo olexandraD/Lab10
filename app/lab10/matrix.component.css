@@ -1,0 +1,80 @@
+#matrix {
+    background-color: rgb(200, 250, 200);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.task-condition {
+    color: #005500;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    background: linear-gradient(45deg, rgba(25, 164, 99, 0.7), rgba(152, 243, 152, 0.7));
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.frame {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #003c00;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #333;
+    font-size: 18px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+table td.highlight {
+    background-color: #f8a2a1; 
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background: linear-gradient(45deg, #31b671, #207a50);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #279d61, #166640);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 18px;
+    color: #004d00;
+    line-height: 1.6;
+}
